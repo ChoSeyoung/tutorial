@@ -1,5 +1,1 @@
-# tutorial
-
-# build test
-
-# build test2
+#직원들의 고정적이고 끊이지않는 질문을 답변하기 위하여 만들어진 프로젝트
