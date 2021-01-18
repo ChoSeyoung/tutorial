@@ -1,0 +1,183 @@
+@charset "UTF-8";
+.app-container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    background: #f5f5f5;
+}
+
+.app-sidebar-wrapper {
+    position: fixed;
+    left: 30px;
+    top: 30px;
+    height: calc(100% - 60px);
+    z-index: 14;
+}
+
+.app-sidebar-wrapper>.app-sidebar {
+    width: 280px;
+    z-index: 11;
+    overflow-y: hidden;
+    min-width: 280px;
+    position: relative;
+    flex: 0 0 280px;
+    transition: all .2s;
+    background: #fff;
+    border-radius: 5.6px;
+    height: 100%;
+    box-shadow: 0 7.5px 35px rgba(31, 10, 6, 0.03), 0 15px 22.5pxrem rgba(31, 10, 6, 0.03), 0 0.25rem 0.53125rem rgba(31, 10, 6, 0.05), 0 2px 3px rgba(31, 10, 6, 0.03);
+}
+
+.app-sidebar>.app-header {
+    width: 100%;
+    min-width: 45px;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    border-bottom: rgba(0, 0, 0, 0.04) solid 1px;
+    background: rgba(0, 0, 0, 0.01);
+}
+
+.app-sidebar>.app-header>.app-logo {
+    width: 30px;
+    height: 30px;
+}
+
+.app-sidebar>.app-header>.hamburger-wrapper {
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+}
+
+.app-sidebar>.app-header>.hamburger-wrapper>.hamburger,
+.app-sidebar>.app-header>.hamburger-wrapper>.hamburger span {
+    display: inline-block;
+    transition: all .4s;
+    box-sizing: border-box;
+}
+
+.app-sidebar>.app-header>.hamburger-wrapper>.hamburger {
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+.app-sidebar>.app-header>.hamburger-wrapper>.hamburger span {
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+    border-radius: 4px;
+}
+
+.app-sidebar>.app-header>.hamburger-wrapper>.hamburger span:nth-of-type(1) {
+    top: 25%;
+}
+
+.app-sidebar>.app-header>.hamburger-wrapper>.hamburger span:nth-of-type(2) {
+    top: 50%;
+}
+
+.app-sidebar>.app-header>.hamburger-wrapper>.hamburger span:nth-of-type(3) {
+    top: 75%;
+}
+
+.app-sidebar>.app-header>.hamburger-wrapper>.hamburger.active span:nth-of-type(1) {
+    top: 0;
+    transform: translateY(15px) rotate(-45deg);
+}
+
+.app-sidebar>.app-header>.hamburger-wrapper>.hamburger.active span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.app-sidebar>.app-header>.hamburger-wrapper>.hamburger.active span:nth-of-type(3) {
+    top: 100%;
+    transform: translateY(-15px) rotate(45deg);
+}
+
+.app-sidebar>.app-body-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.app-sidebar>.app-body-container>.app-body {
+    padding: 0 1.5rem calc((1.5rem) + 70px);
+}
+
+.app-sidebar>.app-body-container>.app-body>.vertical-nav-menu {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    list-style: none;
+}
+
+.app-sidebar>.app-body-container>.app-body>.vertical-nav-menu>li.heading {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 8px 0;
+    color: #da624a;
+    opacity: .6;
+    white-space: nowrap;
+    position: relative;
+}
+
+.app-sidebar>.app-body-container>.app-body>.vertical-nav-menu>li.menu>.m1 {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #6c757d;
+}
+
+.app-sidebar>.app-container {
+    width: 100%;
+    position: relative;
+}
+
+.app-sidebar>.app-body-container>.app-body>.vertical-nav-menu>li.menu>.m1:hover {
+    color: black;
+}
+
+.app-sidebar>.app-body-container>.app-body>.vertical-nav-menu>li.menu>.m1>div:nth-of-type(1) {
+    /*menu icon section*/
+    width: 20px;
+}
+
+.app-sidebar>.app-body-container>.app-body>.vertical-nav-menu>li.menu>.m1>div:nth-of-type(2) {
+    /*menu name section*/
+    flex-grow: 1;
+    padding-left: 12px;
+}
+
+.app-sidebar>.app-body-container>.app-body>.vertical-nav-menu>li.menu>.m1>div:nth-of-type(3) {
+    /*angle up or down icon section*/
+    width: 20px;
+}
+
+.app-sidebar>.app-body-container>.app-body>.vertical-nav-menu>li.menu>.m2 {
+    list-style: none;
+    padding: 0;
+    display: none;
+}
+
+.app-sidebar>.app-body-container>.app-body>.vertical-nav-menu>li.menu>.m2 li {
+    height: 35px;
+    line-height: 35px;
+    padding-left: 32px;
+}
+
+.app-sidebar>.app-body-container>.app-body>.vertical-nav-menu>li.menu>.m2 li.active {
+    background: #fcf1ef;
+    font-weight: bold;
+    border-radius: 35px;
+}
+
+.app-sidebar>.app-body-container>.app-body>.vertical-nav-menu>li.menu>.m2 li.active>a {
+    color: #da624a;
+}

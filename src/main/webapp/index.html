@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>dashboard</title>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" th:href="@{/static/css/common.css}">
+    <link rel="stylesheet" th:href="@{/static/css/app.css}">
+    <link rel="stylesheet" th:href="@{/static/css/content.css}">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="perfect-scrollbar-1.4.0/css/perfect-scrollbar.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script th:src="@{/static/js/common.js}"></script>
+    <script th:src="@{/static/dist/perfect-scrollbar-1.4.0/dist/perfect-scrollbar.js}"></script>
+</head>
+
+<body>
+    <div class="app-container">
+        <div class="app-sidebar-wrapper">
+            <div class="app-sidebar">
+                <div class="app-header">
+                    <img class="app-logo" src="images/logo.svg">
+                    <div class="hamburger-wrapper">
+                        <a class="hamburger" href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+                <div id="app-body-container" class="app-body-container">
+                    <div class="app-body">
+                        <ul class="vertical-nav-menu">
+                            <li class="heading">Menu</li>
+                            <li class="menu">
+                                <div class="m1">
+                                    <div><i class="xi-command"></i></div>
+                                    <div>Command</div>
+                                    <div><i class="xi-angle-down-min"></i></div>
+                                </div>
+                                <ul class="m2">
+                                    <li><a href="#">Command's Child</a></li>
+                                    <li class="active"><a href="#">Command's Child</a></li>
+                                </ul>
+
+                                <div class="m1">
+                                    <div><i class="xi-paper-o"></i></div>
+                                    <div>Pages</div>
+                                    <div><i class="xi-angle-down-min"></i></div>
+                                </div>
+                                <ul class="m2">
+                                    <li><a href="#">Page's Child</a></li>
+                                </ul>
+
+                                <div class="m1">
+                                    <div><i class="xi-airplay"></i></div>
+                                    <div>Applications</div>
+                                    <div><i class="xi-angle-down-min"></i></div>
+                                </div>
+                                <ul class="m2">
+                                    <li><a href="#">Application's Child</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="heading">another</li>
+                            <li class="menu">
+                                <div class="m1">
+                                    <div><i class="xi-chip"></i></div>
+                                    <div>Chip</div>
+                                    <div><i class="xi-angle-down-min"></i></div>
+                                </div>
+                                <ul class="m2">
+                                    <li><a href="#">Chip's Child</a></li>
+                                </ul>
+
+                                <div class="m1">
+                                    <div><i class="xi-wrench"></i></div>
+                                    <div>Wrench</div>
+                                    <div><i class="xi-angle-down-min"></i></div>
+                                </div>
+                                <ul class="m2">
+                                    <li><a href="#">Wrench's Child</a></li>
+                                </ul>
+
+                                <div class="m1">
+                                    <div><i class="xi-cog"></i></div>
+                                    <div>Cog</div>
+                                    <div><i class="xi-angle-down-min"></i></div>
+                                </div>
+                                <ul class="m2">
+                                    <li><a href="#">Cog's Child</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="heading">short</li>
+                            <li class="menu">
+                                <div class="m1">
+                                    <div><i class="xi-eye-o"></i></div>
+                                    <div>Eye on</div>
+                                    <div><i class="xi-angle-down-min"></i></div>
+                                </div>
+
+                                <div class="m1">
+                                    <div><i class="xi-eye-off-o"></i></div>
+                                    <div>Eye off</div>
+                                    <div><i class="xi-angle-down-min"></i></div>
+                                </div>
+
+                                <div class="m1">
+                                    <div><i class="xi-lock-o"></i></div>
+                                    <div>lock on</div>
+                                    <div><i class="xi-angle-down-min"></i></div>
+                                </div>
+
+                                <div class="m1">
+                                    <div><i class="xi-unlock-o"></i></div>
+                                    <div>lock off</div>
+                                    <div><i class="xi-angle-down-min"></i></div>
+                                </div>
+                            </li>
+
+                            <li class="heading">Menu</li>
+                            <li class="menu">
+                                <div class="m1">
+                                    <div><i class="xi-command"></i></div>
+                                    <div>Command</div>
+                                    <div><i class="xi-angle-down-min"></i></div>
+                                </div>
+                                <ul class="m2">
+                                    <li><a href="#">Command's Child</a></li>
+                                    <li class="active"><a href="#">Command's Child</a></li>
+                                </ul>
+
+                                <div class="m1">
+                                    <div><i class="xi-paper-o"></i></div>
+                                    <div>Pages</div>
+                                    <div><i class="xi-angle-down-min"></i></div>
+                                </div>
+                                <ul class="m2">
+                                    <li><a href="#">Page's Child</a></li>
+                                </ul>
+
+                                <div class="m1">
+                                    <div><i class="xi-airplay"></i></div>
+                                    <div>Applications</div>
+                                    <div><i class="xi-angle-down-min"></i></div>
+                                </div>
+                                <ul class="m2">
+                                    <li><a href="#">Application's Child</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="heading">another</li>
+                            <li class="menu">
+                                <div class="m1">
+                                    <div><i class="xi-chip"></i></div>
+                                    <div>Chip</div>
+                                    <div><i class="xi-angle-down-min"></i></div>
+                                </div>
+                                <ul class="m2">
+                                    <li><a href="#">Chip's Child</a></li>
+                                </ul>
+
+                                <div class="m1">
+                                    <div><i class="xi-wrench"></i></div>
+                                    <div>Wrench</div>
+                                    <div><i class="xi-angle-down-min"></i></div>
+                                </div>
+                                <ul class="m2">
+                                    <li><a href="#">Wrench's Child</a></li>
+                                </ul>
+
+                                <div class="m1">
+                                    <div><i class="xi-cog"></i></div>
+                                    <div>Cog</div>
+                                    <div><i class="xi-angle-down-min"></i></div>
+                                </div>
+                                <ul class="m2">
+                                    <li><a href="#">Cog's Child</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="heading">short</li>
+                            <li class="menu">
+                                <div class="m1">
+                                    <div><i class="xi-eye-o"></i></div>
+                                    <div>Eye on</div>
+                                    <div><i class="xi-angle-down-min"></i></div>
+                                </div>
+
+                                <div class="m1">
+                                    <div><i class="xi-eye-off-o"></i></div>
+                                    <div>Eye off</div>
+                                    <div><i class="xi-angle-down-min"></i></div>
+                                </div>
+
+                                <div class="m1">
+                                    <div><i class="xi-lock-o"></i></div>
+                                    <div>lock on</div>
+                                    <div><i class="xi-angle-down-min"></i></div>
+                                </div>
+
+                                <div class="m1">
+                                    <div><i class="xi-unlock-o"></i></div>
+                                    <div>lock off</div>
+                                    <div><i class="xi-angle-down-min"></i></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <script>
+                    new PerfectScrollbar('#app-body-container');
+                </script>
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <div class="content-header">
+                <div class="app-title-left">
+                    <div class="heading">Analytics</div>
+                    <div class="sub-heading">This is an example dashboard created using build-in elements and components.</div>
+                </div>
+                <div class="app-title-right">
+
+                </div>
+            </div>
+            <div class="app-sub-menu">
+                <ul class="m3">
+                    <li>
+                        <div class="e"></div>
+                        <span>Overview</span>
+                    </li>
+                    <li>
+                        <div class="e"></div>
+                        <span>Audiences</span>
+                    </li>
+                    <li class="active">
+                        <div class="e"></div>
+                        <span>Demographics</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
